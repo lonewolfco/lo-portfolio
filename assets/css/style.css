@@ -72,6 +72,65 @@ header {
     padding: 10px;
     
 }
+/* about me section flexbox container */
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 15px;
+
+}
+/* about me header & border */
+.about-me h2 {
+    font-size: 27px;
+   padding: 20px;
+   border-right: dotted black 2px;
+}
+
+.about-me p {
+    width: 60%;
+    margin-right: 15px;
+}
+/* Work flexbox container */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 15px;
+}
+/* Work header & border */
+#work {
+    font-size: 27px;
+   padding: 20px;
+   border-right: dotted black 2px;
+}
+/* Work Image Flexbox */
+.workflex {
+    width: 60%;
+    margin-right: 15px;
+}
+
+/* Contact Me flexbox container */
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 15px; 
+}
+/* Contact Me Header & Border */
+#contact-me {
+    font-size: 27px;
+    padding: 20px;
+    border-right: dotted black 2px;
+}
+/* Contact Me Info Flex */
+.contactflex {
+    width: 60%;
+    margin-right: 15px;
+}
 
 /* Media Queries! */
 @media screen and (max-width: 992px) {
