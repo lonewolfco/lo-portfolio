@@ -123,7 +123,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-   
+    .nav-link:hover {
+        background-color: #DDDDDD;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -135,6 +137,10 @@ footer {
         flex-basis: 100%;
         text-align: center;
         padding: 40px;
+    }
+
+    .nav-link:hover {
+        background-color: #DDDDDD;
     }
 
 }
