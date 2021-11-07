@@ -1,5 +1,6 @@
 :root {
     --title-background: #95B2A7;
+    --accent-color: #AAAAAA;
 }
 
 * {
@@ -8,7 +9,7 @@
 
 /* Header General Styling & Flexbox start */
 header {
-    background-color: #AAAAAA;
+    background-color: var(--accent-color);
     border-bottom: solid 5px #DDDDDD;
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +47,7 @@ header {
 }
 /* Pseudo Classes for Navbar Links */
 .nav-link:hover, .nav-link:focus, .nav-link:active {
-    background-color: #95B2A7;
+    background-color: var(--title-background);
     cursor: pointer;
     color: black;
     text-decoration: none;
@@ -130,6 +131,15 @@ header {
 .contactflex {
     width: 60%;
     margin-right: 15px;
+}
+
+footer {
+    background-color: var(--accent-color);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
 }
 
 /* Media Queries! */
