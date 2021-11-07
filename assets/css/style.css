@@ -1,48 +1,75 @@
 :root {
-
+    --title-background: #95B2A7;
 }
 
-/* body {
-    margin: 0 auto;
-} */
+* {
+    /* box-sizing: border-box; */
+}
 
-
-.header {
+header {
     background-color: #AAAAAA;
     border-bottom: solid 5px #DDDDDD;
-    padding: 20px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
 .lo {
-    background-color: #95B2A7;
-    padding: 10px 50px;
+    background-color: var(--title-background);
+    width: 250px;
     font-size: 30px;
-    margin: auto 0 auto;
-   text-align:center;
-    /* order: 0;
-    flex: 0 1 auto;
-    align-self: auto; */
-
+    height: 50px;
+    padding: 10px;
+   /* text-align:center; */
+    /* flex: 1 1 100px; */
 }
 
 .nav {
-    flex-direction: column;
-    align-items: flex-end;
+
 }
 
 .nav li {
-    display:inline-block;
-    order: 0;
-    flex: 0 1 auto;
-    /* align-self: auto; */
-    padding: 10px;
+    display: inline-block;
+    gap: 10px;
     font-size: 17px;
+    height: 50px;
+    padding: 17px;
+    flex: 1 1 50px;
+    
 }
 
 .nav li:hover {
     background-color: #95B2A7;
+}
+
+.background {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/treering.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.subtitle {
+    background-color: var(--title-background);
+    font-size: 25px;
+    width: 350px;
+    padding: 10px;
+    
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
 }
