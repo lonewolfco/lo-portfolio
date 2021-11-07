@@ -9,6 +9,8 @@
 
 /* Header General Styling & Flexbox start */
 header {
+    position: fixed;
+    width: 100%;
     background-color: var(--accent-color);
     border-bottom: solid 5px #DDDDDD;
     display: flex;
