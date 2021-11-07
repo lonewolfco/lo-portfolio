@@ -30,8 +30,10 @@ header {
    /* text-align:center; */
     /* flex: 1 1 100px; */
 }
-/* Nav Bar Styling */
 
+
+
+/* Nav Bar Styling */
 .nav-link {
     display: inline-block;
     gap: 10px;
@@ -42,16 +44,16 @@ header {
     flex-wrap: wrap-reverse;
     
 }
-/* Remove Link Decoration & Link Coloring */
-.nav-link a {
-    color: black;
+/* Remove Link Decoration & Link Coloring on Header linked content */
+.nav-link a, .lo a {
+    color: #0A0A0A;
     text-decoration: none;
 }
 /* Pseudo Classes for Navbar Links */
 .nav-link:hover, .nav-link:focus, .nav-link:active {
     background-color: var(--title-background);
     cursor: pointer;
-    color: black;
+    color: #0A0A0A;
     text-decoration: none;
 }
 /* Wood Grain Background Section Image + Flexbox */
@@ -88,7 +90,7 @@ header {
 .main-header h2 {
     font-size: 27px;
    padding: 20px;
-   border-right: dotted black 2px;
+   border-right: dotted #0A0A0A 2px;
 }
 /* Main content p tag formatting width & right margins */
 .main-header p {
