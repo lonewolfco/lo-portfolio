@@ -1,0 +1,48 @@
+:root {
+
+}
+
+/* body {
+    margin: 0 auto;
+} */
+
+
+.header {
+    background-color: #AAAAAA;
+    border-bottom: solid 5px #DDDDDD;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lo {
+    background-color: #95B2A7;
+    padding: 10px 50px;
+    font-size: 30px;
+    margin: auto 0 auto;
+   text-align:center;
+    /* order: 0;
+    flex: 0 1 auto;
+    align-self: auto; */
+
+}
+
+.nav {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav li {
+    display:inline-block;
+    order: 0;
+    flex: 0 1 auto;
+    /* align-self: auto; */
+    padding: 10px;
+    font-size: 17px;
+}
+
+.nav li:hover {
+    background-color: #95B2A7;
+}
