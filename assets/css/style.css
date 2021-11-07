@@ -45,7 +45,7 @@ header {
     
 }
 /* Remove Link Decoration & Link Coloring on Header linked content */
-.nav-link a, .lo a {
+.nav-link a, .lo a, .contactme-link a {
     color: #0A0A0A;
     text-decoration: none;
 }
@@ -78,7 +78,7 @@ header {
     
 }
 /* Main Sections' flexbox container for positioning left & right side of the main content */
-.main-header {
+.main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -87,13 +87,13 @@ header {
 
 }
 /* Main Sections' h2 styling*/
-.main-header h2 {
+.main-content h2 {
     font-size: 27px;
-   padding: 20px;
+   padding: 15px;
    border-right: dotted #0A0A0A 2px;
 }
 /* Main content p tag formatting width & right margins */
-.main-header p {
+.main-content p {
     width: 60%;
     margin-right: 15px;
 }
@@ -107,6 +107,17 @@ header {
 .contactflex {
     width: 60%;
     margin-right: 15px;
+} 
+
+.contactme-link {
+    display: inline-block;
+    padding: 15px;
+    flex: 1 0 auto;
+}
+
+.contactme-link a:hover, .contactme-link a:active {
+    color: var(--title-background);
+    font-weight: bolder;
 }
 
 footer {
@@ -137,10 +148,21 @@ footer {
         flex-basis: 100%;
         text-align: center;
         padding: 40px;
+        width: 100%;
     }
 
     .nav-link:hover {
         background-color: #DDDDDD;
     }
+
+    /* #contact-me {
+        flex-wrap: nowrap;
+    }
+
+    .contactme-link {
+        flex-basis: 50%;
+        text-align: center;
+
+    } */
 
 }
