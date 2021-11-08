@@ -10,6 +10,7 @@
 /* Header General Styling & Flexbox start */
 header {
     position: fixed;
+    z-index: 1;
     width: 100%;
     background-color: var(--accent-color);
     border-bottom: solid 5px #DDDDDD;
@@ -51,7 +52,7 @@ header {
 }
 /* Pseudo Classes for Navbar Links */
 .nav-link:hover, .nav-link:focus, .nav-link:active {
-    background-color: var(--title-background);
+    background-color: #DDDDDD;
     cursor: pointer;
     color: #0A0A0A;
     text-decoration: none;
@@ -98,11 +99,44 @@ header {
     margin-right: 15px;
 }
 
-/* Work Image Flexbox */
+/* Work Images Flexbox */
 .workflex {
     width: 60%;
     margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
+
+/* Image Box Flex Adjustment */
+.box {
+    flex: 1 0 50%;  
+}
+
+/* Image Width Adjustment in the Flexbox */
+.box img {
+    width: 100%;
+}
+
+/* Mt Baker Image 100% flex-basis so it always takes up 100% of the width in the flexbox */
+#mtbaker {
+    flex-basis: 100%;
+}
+
+/* Text Boxes on Image Styling */
+
+.text-box {
+    position: relative;
+    bottom: 80px;
+    background-color: #aaaaaac7;
+    color: #0A0A0A;
+    width: 50%;
+    padding: 10px;
+    flex: 1 0 50%;
+    
+}
+
 /* Contact Me Section Flexbox for Links */
 .contactflex {
     width: 60%;
@@ -112,7 +146,7 @@ header {
 .contactme-link {
     display: inline-block;
     padding: 15px;
-    flex: 1 0 auto;
+    flex: 1 0 100%;
 }
 
 .contactme-link a:hover, .contactme-link a:active {
@@ -120,6 +154,7 @@ header {
     font-weight: bolder;
 }
 
+/* Footer Styling */
 footer {
     background-color: var(--accent-color);
     width: 100%;
@@ -134,8 +169,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-link:hover {
-        background-color: #DDDDDD;
+    #secondaryimage {
+        flex-basis: 100%;
     }
 }
 
@@ -151,18 +186,8 @@ footer {
         width: 100%;
     }
 
-    .nav-link:hover {
-        background-color: #DDDDDD;
-    }
-
-    /* #contact-me {
-        flex-wrap: nowrap;
-    }
-
-    .contactme-link {
-        flex-basis: 50%;
-        text-align: center;
-
+    /* #secondaryimage {
+        flex-basis: 100%;
     } */
 
 }
