@@ -21,15 +21,12 @@ header {
 /* Lo Selby Header Box Specific Styling */
 .lo {
     background-color: var(--title-background);
-    width: 250px;
+    /* width: 250px; */
     font-size: 30px;
     height: 50px;
     padding: 10px;
     flex: 1 0 auto;
-   /* text-align:center; */
-    /* flex: 1 1 100px; */
 }
-
 
 
 /* Nav Bar Styling */
@@ -38,11 +35,9 @@ header {
     gap: 10px;
     font-size: 17px;
     height: 50px;
-    padding: 17px;
-    flex: 1 0 0;
-    flex-wrap: wrap-reverse;
-    
+    padding: 17px;   
 }
+
 /* Remove Link Decoration & Link Coloring on Header linked content */
 .nav-link a, .lo a, .contactme-link a {
     color: #0A0A0A;
@@ -66,7 +61,7 @@ header {
     display:flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 /* Subtitle styling */
 .subtitle {
@@ -76,6 +71,12 @@ header {
     padding: 10px;
     
 }
+
+/* Headshot Formatting */
+.headshot img {
+    border-radius: 45%;
+}
+
 /* Main Sections' flexbox container for positioning left & right side of the main content */
 .main-content {
     display: flex;
@@ -89,7 +90,6 @@ header {
 .main-content h2 {
     font-size: 27px;
    padding: 15px;
-   /* justify-content: flex-start; */
    border-right: dotted #0A0A0A 2px;
 }
 /* Main content p tag formatting width & right margins */
@@ -143,7 +143,7 @@ header {
 } 
 
 .contactme-link {
-    display: inline-block;
+    display: inline-flex;
     padding: 15px;
     /* flex: 1 0 100%; */
 }
