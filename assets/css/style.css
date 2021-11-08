@@ -3,9 +3,7 @@
     --accent-color: #AAAAAA;
 }
 
-* {
-    /* box-sizing: border-box; */
-}
+
 
 /* Header General Styling & Flexbox start */
 header {
@@ -81,7 +79,7 @@ header {
 /* Main Sections' flexbox container for positioning left & right side of the main content */
 .main-content {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-end;
     gap: 15px;
     padding: 15px;
@@ -91,6 +89,7 @@ header {
 .main-content h2 {
     font-size: 27px;
    padding: 15px;
+   /* justify-content: flex-start; */
    border-right: dotted #0A0A0A 2px;
 }
 /* Main content p tag formatting width & right margins */
@@ -146,12 +145,13 @@ header {
 .contactme-link {
     display: inline-block;
     padding: 15px;
-    flex: 1 0 100%;
+    /* flex: 1 0 100%; */
 }
 
 .contactme-link a:hover, .contactme-link a:active {
     color: var(--title-background);
     font-weight: bolder;
+    text-shadow: 0 3px 0 #aaaaaa3b;
 }
 
 /* Footer Styling */
@@ -186,8 +186,6 @@ footer {
         width: 100%;
     }
 
-    /* #secondaryimage {
-        flex-basis: 100%;
-    } */
+
 
 }
