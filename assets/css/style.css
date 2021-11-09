@@ -80,12 +80,12 @@ header {
 /* Main Sections' flexbox container for positioning left & right side of the main content */
 .main-content {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: flex-end;
     gap: 15px;
     padding: 15px;
 
 }
+
 /* Main Sections' h2 styling*/
 .main-content h2 {
     font-size: 27px;
@@ -137,15 +137,18 @@ header {
 }
 
 /* Contact Me Section Flexbox for Links */
+
+
 .contactflex {
     width: 60%;
     margin-right: 15px;
+    text-align: center;
 } 
+
 
 .contactme-link {
     display: inline-flex;
     padding: 15px;
-    /* flex: 1 0 100%; */
 }
 
 .contactme-link a:hover, .contactme-link a:active {
@@ -186,6 +189,8 @@ footer {
         width: 100%;
     }
 
-
+    #contact-me {
+        font-size: 22px;
+    }
 
 }
