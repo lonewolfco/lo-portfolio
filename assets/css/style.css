@@ -42,18 +42,21 @@ header {
 }
 
 /* LINK STYLING */
-/* Pseudo Classes for Navbar Links */
-.nav-link:hover, .nav-link:focus, .nav-link:active {
-    background-color: var(--accent-color);
+
+a {
     cursor: pointer;
 }
 
+/* Pseudo Classes for Navbar Links */
+.nav-link:hover {
+    background-color: var(--accent-color);
+}
+
+
 /* Pseudo Classes for Contact Me Links */
-.contactme-link a:hover, .contactme-link:active {
-    color: var(--primary-color);
+.contactme-link a:hover{
     font-weight: bolder;
     text-shadow: 0 3px 0 #aaaaaa3b;
-    cursor: pointer;
 }
 
 
@@ -100,16 +103,14 @@ header {
    border-right: dotted #0A0A0A 2px;
 }
 
-/* Main Content Sections' p tag formatting width & right margins */
-.main-content p {
+/* Right-Side container elements width & margins */
+.right-side {
     width: 60%;
     margin-right: 15px;
 }
 
 /* Work Images Flexbox */
-.workflex {
-    width: 60%;
-    margin-right: 15px;
+#workflex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -145,12 +146,14 @@ header {
     
 }
 
+.text-box:hover {
+    background-color: #95b2a7b4;
+}
+
 /* Contact Me Section Sepcific Styling */
 
 
-.contactflex {
-    width: 60%;
-    margin-right: 15px;
+#contact-ul {
     text-align: center;
 } 
 
