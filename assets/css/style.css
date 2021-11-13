@@ -52,9 +52,8 @@ a {
     background-color: var(--accent-color);
 }
 
-
 /* Pseudo Classes for Contact Me Links */
-.contactme-link a:hover{
+.contactme-link a:hover {
     font-weight: bolder;
     text-shadow: 0 3px 0 #aaaaaa3b;
 }
