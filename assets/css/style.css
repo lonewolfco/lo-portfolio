@@ -1,17 +1,20 @@
 :root {
-    --title-background: #95B2A7;
-    --accent-color: #AAAAAA;
+    --primary-color: #95B2A7;
+    --secondary-color: #AAAAAA;
+    --accent-color: #DDDDDD;
 }
 
-
+body, a {
+    color: #0A0A0A;
+}
 
 /* Header General Styling & Flexbox start */
 header {
     position: fixed;
     z-index: 1;
     width: 100%;
-    background-color: var(--accent-color);
-    border-bottom: solid 5px #DDDDDD;
+    background-color: var(--secondary-color);
+    border-bottom: solid 5px var(--accent-color);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -20,7 +23,7 @@ header {
 }
 /* Lo Selby Header Box Specific Styling */
 .lo {
-    background-color: var(--title-background);
+    background-color: var(--primary-color);
     /* width: 250px; */
     font-size: 30px;
     height: 50px;
@@ -35,22 +38,26 @@ header {
     gap: 10px;
     font-size: 17px;
     height: 50px;
-    padding: 17px;   
+    padding: 17px; 
 }
 
-/* Remove Link Decoration & Link Coloring on Header linked content */
-.nav-link a, .lo a, .contactme-link a {
-    color: #0A0A0A;
-    text-decoration: none;
-}
+/* LINK STYLING */
 /* Pseudo Classes for Navbar Links */
 .nav-link:hover, .nav-link:focus, .nav-link:active {
-    background-color: #DDDDDD;
+    background-color: var(--accent-color);
     cursor: pointer;
-    color: #0A0A0A;
-    text-decoration: none;
 }
-/* Wood Grain Background Section Image + Flexbox */
+
+/* Pseudo Classes for Contact Me Links */
+.contactme-link a:hover, .contactme-link:active {
+    color: var(--primary-color);
+    font-weight: bolder;
+    text-shadow: 0 3px 0 #aaaaaa3b;
+    cursor: pointer;
+}
+
+
+/* Woodgrain Background Section Image + Flexbox */
 .background {
     height: 350px;
     width: 100%;
@@ -65,7 +72,7 @@ header {
 }
 /* Subtitle styling */
 .subtitle {
-    background-color: var(--title-background);
+    background-color: var(--primary-color);
     font-size: 25px;
     width: 350px;
     padding: 10px;
@@ -77,7 +84,7 @@ header {
     border-radius: 45%;
 }
 
-/* Main Sections' flexbox container for positioning left & right side of the main content */
+/* HTML Main Tag Sections flexbox container for positioning left & right side of the main content */
 .main-content {
     display: flex;
     justify-content: flex-end;
@@ -86,13 +93,14 @@ header {
 
 }
 
-/* Main Sections' h2 styling*/
+/* Main Content Section' h2 styling*/
 .main-content h2 {
     font-size: 27px;
    padding: 15px;
    border-right: dotted #0A0A0A 2px;
 }
-/* Main content p tag formatting width & right margins */
+
+/* Main Content Sections' p tag formatting width & right margins */
 .main-content p {
     width: 60%;
     margin-right: 15px;
@@ -109,16 +117,17 @@ header {
 }
 
 /* Image Box Flex Adjustment */
-.box {
+.imgbox {
     flex: 1 0 50%;  
 }
 
 /* Image Width Adjustment in the Flexbox */
-.box img {
+.imgbox img {
     width: 100%;
+    height: 100%;
 }
 
-/* Mt Baker Image 100% flex-basis so it always takes up 100% of the width in the flexbox */
+/* Mt Baker Background Image 100% flex-basis so it always takes up 100% of the width in the flexbox */
 #mtbaker {
     flex-basis: 100%;
 }
@@ -136,7 +145,7 @@ header {
     
 }
 
-/* Contact Me Section Flexbox for Links */
+/* Contact Me Section Sepcific Styling */
 
 
 .contactflex {
@@ -151,15 +160,10 @@ header {
     padding: 15px;
 }
 
-.contactme-link a:hover, .contactme-link a:active {
-    color: var(--title-background);
-    font-weight: bolder;
-    text-shadow: 0 3px 0 #aaaaaa3b;
-}
 
 /* Footer Styling */
 footer {
-    background-color: var(--accent-color);
+    background-color: var(--secondary-color);
     width: 100%;
     padding: 20px;
     text-align: center;

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
   }
   
   /* Gives the body element a parent height to compare against */
@@ -18,13 +19,11 @@
   
   h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
+    text-decoration: none;
   }
   
-  /* Matches the font of special elements to the rest of the page */
-  input, select, option, optgroup, textarea, button,
-  pre, code {
-    font-size: 100%;
-    font-family: inherit;
+  a {
+    text-decoration: none;
   }
   
   /* Removes default bullet points from lists */
